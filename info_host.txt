@@ -1,0 +1,4 @@
+-- Thong tin database --
+
+Username:	demo66_dttv247
+Password:		EOxxdU5R1
