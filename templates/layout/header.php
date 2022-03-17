@@ -1,4 +1,4 @@
-<div class="h1200 clearfix">
+<div class="h1200 clearfix top-header">
 	<div class="logo">
 		<a href=""><img src="thumb/99x54/1/<?=_upload_hinhanh_l.$row_logo['photo']?>" alt="<?=$seo['alt']?>" title="<?=$seo['alt']?>" /></a>
 	</div>
@@ -6,12 +6,12 @@
 		<a href="" ><img src="thumb/366x45/1/<?=_upload_hinhanh_l.$row_ten_cty['photo']?>" alt="<?=$seo['alt']?>" title="<?=$seo['alt']?>" /></a>
 	</div>
 	
-	<div class="langs">
+	<!-- <div class="langs">
 	  <ul>
 	   <li><a href="index.php?com=ngonngu&lang="><img src="images/vi.png"></a></li>
 	   <li><a href="index.php?com=ngonngu&lang=en"><img src="images/en.png"></a></li>
 	  </ul>
-	</div><!--end langs-->
+	</div>
 	
 	<div class="email">
 		<img src="images/img/top2.png" alt="hotline">
@@ -30,7 +30,7 @@
 			<p><?=$company['hotline']?></p>
 		</div>
 
-	</div>
+	</div> -->
 	
 	
 

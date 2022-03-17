@@ -1,3 +1,7 @@
+<?php
+echo  md5('$nina@'.'admin'.'@#$fd_!34^');
+
+?>
 * {
 	margin: 0;
 	padding: 0;
@@ -388,17 +392,21 @@ div.h1200
 {
 	max-width: 1200px;
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 }
-div.h1200.top-header{
-    display: flex;
-    justify-content: center;
-	align-items: center;
-	height: 100%;
+					/* header */
+div#header
+{
+	/* position:relative;
+	margin:auto;
+	padding: 20px 0;
+	padding-top: 15px;
+	padding-bottom: 5px; */
 	background-image: url(../images/bg_top.png);
     background-repeat: repeat-y;
     background-position: center center;
     width: 100%;
-	max-width: 100%; 
     -webkit-transition: height .3s ease-in-out;
     transition: height .3s ease-in-out;
     z-index: 100;
@@ -406,11 +414,6 @@ div.h1200.top-header{
     left: 0;
     top: 0;
     position: absolute;
-}				/* header */
-div#header
-{
-	transition: all .3s ease 0s;
-    background-color: transparent;
 }
 div.logo
 {
@@ -480,9 +483,8 @@ div#menu{
     background: #10499e;
     z-index: 100;
     width: 100%;
-    top: 120px;
-	right: 0;
-    left: 0;
+    bottom: 30%;
+
 }
 div#menu ul{
   float:left;  
@@ -617,9 +619,6 @@ div#search i{
 
 div#slider{
 	margin:auto;
-}
-div#slider img{
-	width: 100%;
 }
 
 div#gioi_thieu

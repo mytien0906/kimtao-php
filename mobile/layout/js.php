@@ -317,15 +317,17 @@ marqueeInit({
       }); 
   });
 </script><?php */?>
+
 <?php /*?>Code gữ thanh menu trên cùng  <?php */?>
 <script>
 	$(document).ready(function(){
 		$(window).bind("scroll", function() {
 			var cach_top = $(window).scrollTop(); // ví trí hiện tại theo chiều dọc của thanh scroll
-			var heaigt_header = $('#menu').height();
-
-			if(cach_top >= heaigt_header){
-				if(!$('#menu').hasClass('fix_head fadeInDown animated')){
+			var height_menu = $('#menu').height();
+			var height_header = $('.top-header').height();
+			if(cach_top >= height_menu){
+				console.log(height_header);
+				if(!$('#menu').hasClass('fix_head fadeInDown animated') && ){
 					$('#menu').addClass('fix_head fadeInDown animated');
 				}
 			}else{
