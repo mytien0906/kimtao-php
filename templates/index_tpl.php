@@ -40,7 +40,7 @@
 					</div>
 					<div class="xemthem-gioithieu1">
 						 <a href="<?=$v['type']?>/<?=$v['tenkhongdau']?>.html" title="<?=$v['ten']?>">
-						 	<?=_xemthem?> <i class="fa fa-play" aria-hidden="true"></i>
+						 	<?=_xemthem?>
 						 </a>
 					</div>
 				</div>

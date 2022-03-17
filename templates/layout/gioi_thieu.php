@@ -25,15 +25,15 @@
 						 	<?=$v['ten']?>
 						 </a>
 					</div>
-					<div class="bd-gioithieu">
+					<!-- <div class="bd-gioithieu">
 						<img src="images/img/bd-gioithieu.png" alt="giới thiệu">
 					</div>
 					<div class="mota-gioithieu1">
 						<?=catchuoi($v['mota'],150)?>
-					</div>
+					</div> -->
 					<div class="xemthem-gioithieu1">
 						 <a href="<?=$v['type']?>/<?=$v['tenkhongdau']?>.html" title="<?=$v['ten']?>">
-						 	<?=_xemthem?> <i class="fa fa-play" aria-hidden="true"></i>
+						 	<?=_xemthem?>
 						 </a>
 					</div>
 				</div>
@@ -51,15 +51,15 @@
 						 	<?=$du_an['ten']?>
 						 </a>
 					</div>
-					<div class="bd-gioithieu">
+					<!-- <div class="bd-gioithieu">
 						<img src="images/img/bd-gioithieu.png" alt="giới thiệu">
 					</div>
 					<div class="mota-gioithieu1">
 						<?=catchuoi($du_an['mota'],150)?>
-					</div>
+					</div> -->
 					<div class="xemthem-gioithieu1">
 						 <a href="<?=$du_an['type']?>/<?=$du_an['tenkhongdau']?>.html" title="<?=$du_an['ten']?>">
-						 	<?=_xemthem?> <i class="fa fa-play" aria-hidden="true"></i>
+						 	<?=_xemthem?>
 						 </a>
 					</div>
 				</div>

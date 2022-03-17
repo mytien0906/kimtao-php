@@ -320,23 +320,33 @@ marqueeInit({
 
 <?php /*?>Code gữ thanh menu trên cùng  <?php */?>
 <script>
-	$(document).ready(function(){
-		$(window).bind("scroll", function() {
-			var cach_top = $(window).scrollTop(); // ví trí hiện tại theo chiều dọc của thanh scroll
-			var height_menu = $('#menu').height();
-			var height_header = $('.top-header').height();
-			if(cach_top >= height_menu){
-				console.log(height_header);
-				if(!$('#menu').hasClass('fix_head fadeInDown animated') && ){
-					$('#menu').addClass('fix_head fadeInDown animated');
-				}
-			}else{
-				$('#menu').removeClass('fix_head fadeInDown animated');
-			}
-		});
-	});
- </script>
-<?php /*?>Code gữ thanh menu trên cùng<?php */?>
+	window.onscroll = function() {
+		myFunction()
+	};
+
+	// Get the menu
+	var menu = document.querySelector("#menu");
+	var header = document.querySelector(".top-header");
+	console.log(header);
+	// Get the offset position of the navbar
+	var sticky = menu.offsetTop;
+	// Add the sticky class to the menu when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+		if (window.pageYOffset > 50) {
+			menu.classList.add("fix_head");
+			header.classList.add("fix_head");
+			header.style.height = '58px';
+			menu.style.top = '58px';
+		} else {
+			menu.classList.remove("fix_head");
+			header.classList.remove("fix_head");
+			header.style.height = '124px';
+			menu.style.top = '120px';
+		}
+	}
+</script>
+<?php 
+/*?>Code gữ thanh menu trên cùng<?php */?>
 
 <?php /*?>lockfixed <?php */?>
 <?php /*?><script src="js/jquery.lockfixed.min.js"></script>
